@@ -6,7 +6,7 @@ setup(
     description='A sample test package',
     author='Ran LIU',
     author_email='rliu@42.fr',
-	licence='MIT',
+    licence='MIT',
     packages=find_packages(),
     install_requires=[],  # Add dependencies here if needed
     classifiers=[],
