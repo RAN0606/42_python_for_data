@@ -1,4 +1,4 @@
-ft_list = ["Hello", "world!"]
+ft_list = ["Hello", "World!"]
 ft_tuple = ("Hello", "France!")
 ft_set = {"Hello", "Pairs!"}
 ft_dict = {"Hello": "42Paris!"}

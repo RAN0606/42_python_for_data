@@ -20,9 +20,11 @@ NESTED_MORSE = {
 def ft_morse_encrypt(text: str):
     morsecode = ""
     try:
-        for c in text:
-            c = c.upper()
+        for i in range(len(text)):
+            c = text[i].upper()
             morsecode += NESTED_MORSE[c]
+            if i != len(text) - 1:
+                morsecode += ' '
         print(morsecode)
     except KeyError:
         print("AssertionError: the arguments are bad")

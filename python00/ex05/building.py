@@ -35,15 +35,16 @@ def main():
 
     if len(argList) > 2:
         print("AssertionError: more than one argument is provided")
-    elif len(argList) == 2:
-        text = argList[1]
-    elif len(argList) == 1:
-        print("What is the text to count?")
-        try:
-            text = sys.stdin.read()
-        except KeyboardInterrupt:
-            print("\nUser interrupted input.")
-    count_character(text)
+    else:
+        if len(argList) == 2:
+            text = argList[1]
+        elif len(argList) == 1:
+            print("What is the text to count?")
+            try:
+                text = sys.stdin.read()
+            except KeyboardInterrupt:
+                print("\nUser interrupted input.")
+        count_character(text)
 
 
 if __name__ == "__main__":
