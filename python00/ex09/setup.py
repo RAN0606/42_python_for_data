@@ -6,8 +6,7 @@ setup(
     description='A sample test package',
     author='Ran LIU',
     author_email='rliu@42.fr',
-    licence='MIT',
     packages=find_packages(),
-    install_requires=[],  # Add dependencies here if needed
-    classifiers=[],
+    install_requires=[],
+    classifiers=["License :: OSI Approved :: MIT License",],
 )
