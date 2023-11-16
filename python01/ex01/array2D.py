@@ -17,3 +17,5 @@ You must use the slicing method.
         return (newArray.tolist())
     except IndexError as e:
         print("Slice_me Index error: ", e)
+    except ValueError as e:
+        print("Slice_me Value error: ", e)
