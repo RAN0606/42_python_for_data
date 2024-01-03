@@ -15,6 +15,7 @@ def ft_zoom(path: str, x_start: int, y_start:int) -> np.array:
     gray = (0.2989 * r + 0.5870 * g + 0.1140 * b).astype(int)
     
     zoomed_region = gray[y_start:y_start+400, x_start:x_start+400]
+    print("New shape after Transpose: ", gray.shape)
     print(gray)
     plt.subplot(1, 1, 1)
     plt.title('Zoomed Region')
