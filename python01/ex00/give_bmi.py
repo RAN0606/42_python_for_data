@@ -6,8 +6,9 @@ def give_bmi(
     weight: list[int | float]
 ) -> list[int | float]:
     """
-give_bmi(height: list[int | float],weight: list[int | float]) -> list[int | float]
-take 2 lists of integers or floats in input and returns a list of BMI values.
+give_bmi(height: list[int | float],weight: list[int | float]) -> list[int |
+float] take 2 lists of integers or floats in input and returns a list of BMI
+values.
     """
     listbmi = []
     try:
@@ -22,13 +23,13 @@ take 2 lists of integers or floats in input and returns a list of BMI values.
 def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
     """
 apply_limit(bmi: list[int | float], limit: int) -> list[bool], accepts a list
-of integers or floats and an integer representing a limit as parameters. 
+of integers or floats and an integer representing a limit as parameters.
 It returns a list of booleans (True if above the limit)
     """
     lists = []
     try:
         aBmi = np.array(bmi)
         lists = list(aBmi > limit)
-    except:
-        print ("apply_limit Error")
+    except TypeError as e:
+        print("apply_limit TypeError: {}".format(e))
     return (lists)
