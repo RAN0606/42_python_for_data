@@ -25,6 +25,9 @@ def ft_zoom(path: str, x_start: int, y_start:int) -> np.array:
     return zoomed_region
 
 def ft_rotate(img : np.array) -> np.array:
+    """
+    ft_rotate(img : np.array) rotate the image
+    """
     if not isinstance(img, np.ndarray):
         return print("Can't rotate with img argument NULL")
     rotateimg = np.transpose(img, (1, 0, 2))
