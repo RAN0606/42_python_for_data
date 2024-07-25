@@ -15,9 +15,7 @@ def ft_invert(array: np.ndarray) -> np.ndarray:
         plt.title('Figure: invert')
         plt.imshow(inverted_array)
         plt.show()
-
         return inverted_array
-
     except Exception as e:
         print("Exception:", e)
     except KeyboardInterrupt:

@@ -10,9 +10,9 @@ You must use the slicing method.
     """
     try:
         familyArray = np.array(family)
-        print(familyArray.shape)
+        print("My shape is : ", familyArray.shape)
         newArray = familyArray[start:end]
-        print(newArray.shape)
+        print("My new shape is : ", newArray.shape)
 
         return (newArray.tolist())
     except IndexError as e:
