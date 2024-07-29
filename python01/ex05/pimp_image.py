@@ -5,7 +5,7 @@ import numpy as np
 
 def ft_invert(array: np.ndarray) -> np.ndarray:
     """
-    Inverts the color of the image received.
+Inverts the color of the image received.
     """
 
     try:
@@ -24,11 +24,10 @@ def ft_invert(array: np.ndarray) -> np.ndarray:
 
 def ft_red(array: np.ndarray) -> np.ndarray:
     """
-    Keeps only the red color channel of the image.
+Keeps only the red color channel of the image.
     """
     try:
         red_pixel = array[:, :, 0]
-        print(red_pixel)
         array_filtered = np.zeros_like(array)
         array_filtered[:, :, 0] = red_pixel
         # Image.fromarray(array_filtered).show()
@@ -45,7 +44,7 @@ def ft_red(array: np.ndarray) -> np.ndarray:
 
 def ft_green(array: np.ndarray) -> np.ndarray:
     """
-    Keeps only the green color channel of the image.
+Keeps only the green color channel of the image.
     """
     try:
         green_pixel = array[:, :, 1]
@@ -65,7 +64,7 @@ def ft_green(array: np.ndarray) -> np.ndarray:
 
 def ft_blue(array: np.ndarray) -> np.ndarray:
     """
-    Keeps only the blue color channel of the image.
+Keeps only the blue color channel of the image.
     """
     try:
         blue_pixel = array[:, :, 2]
@@ -85,7 +84,7 @@ def ft_blue(array: np.ndarray) -> np.ndarray:
 
 def ft_grey(array: np.ndarray) -> np.ndarray:
     """
-    Transform rgb color to grey.
+Transform rgb color to grey.
     """
     try:
         red_pixel = array[:, :, 0]

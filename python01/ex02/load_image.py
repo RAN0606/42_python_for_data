@@ -4,9 +4,9 @@ import numpy as np
 
 def ft_load(path: str) -> np.array:
     """
-    ft_load(path: str) -> numpy.array:(you can return to the desired format)
-    loads an image, prints its format, and its pixels content in RGB format.
-    JPG and JPEG format, handle error with a clear error message.
+ft_load(path: str) -> numpy.array:(you can return to the desired format)
+loads an image, prints its format, and its pixels content in RGB format.
+JPG and JPEG format, handle error with a clear error message.
     """
 
     try:

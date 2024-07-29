@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 def ft_zoom(path: str, x_start: int, y_start: int) -> np.array:
 
     """
-    ft_zoom(path: str, x_start: int, y_start:int, x_end: int,
-    y_end: int) -> np.array
-    take the image print its imformation, zoom and display it.
+ft_zoom(path: str, x_start: int, y_start:int, x_end: int,
+y_end: int) -> np.array
+take the image print its imformation, zoom and display it.
     """
     try:
         imageArray = ft_load(path)
