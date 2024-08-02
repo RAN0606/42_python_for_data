@@ -17,6 +17,7 @@ def main():
     print("---")
     Lyanna = Stark("Lyanna", False)
     print(Lyanna.__dict__)
+    print(Lyanna.die.__doc__)
     # hodor = Character("hodor")
 
 
