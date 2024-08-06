@@ -19,13 +19,11 @@ class Baratheon(Character):
 
     def __str__(self):
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
-    
+
     def __repr__(self):
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
 
 
-
-#your code here
 class Lannister(Character):
     """
     docstring for Class of the family Lannister:
@@ -42,13 +40,13 @@ class Lannister(Character):
         self.family_name = "Lannister"
         self.eyes = "blue"
         self.hairs = "light"
+
     def __str__(self):
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
-    
+
     def __repr__(self):
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
 
-    
     @classmethod
     def create_lannister(cls, first_name, is_alive):
         """

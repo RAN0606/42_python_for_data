@@ -1,7 +1,7 @@
 class calculator:
     """
-    staticmethod class: these method can be called 
-    on the class itself without creating an instance 
+    staticmethod class: these method can be called
+    on the class itself without creating an instance
     of the class
     """
     @staticmethod

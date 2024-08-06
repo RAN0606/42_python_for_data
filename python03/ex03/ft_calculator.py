@@ -1,6 +1,6 @@
 class calculator:
     """
-     a calculator class that is able to do calculations 
+    a calculator class that is able to do calculations
     (addition, multiplication, subtraction, division) of vector with a scalar
     """
     def __init__(self, vector):

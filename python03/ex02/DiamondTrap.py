@@ -14,7 +14,7 @@ class King(Baratheon, Lannister):
         Baratheon character has been created
         """
         super().__init__(firstname, is_alive)
-    
+
     def set_eyes(self, color):
         """
         class method for set the color of eyes
@@ -25,7 +25,7 @@ class King(Baratheon, Lannister):
         """
         class method for set the color of hairs.
         """
-        self.hairs = color 
+        self.hairs = color
 
     def get_eyes(self) -> str:
         """
@@ -37,4 +37,4 @@ class King(Baratheon, Lannister):
         """
         class method for get the color of hairs.
         """
-        return self.hairs 
+        return self.hairs

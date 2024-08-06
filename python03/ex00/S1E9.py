@@ -43,4 +43,3 @@ class Stark(Character):
         Docstring for die method of Class Stark:
         the character is die.
         """
-        
