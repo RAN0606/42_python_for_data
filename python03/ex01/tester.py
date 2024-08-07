@@ -13,11 +13,11 @@ def main():
     print("---")
     Cersei = Lannister("Cersei")
     print(Cersei.__dict__)
-    print(Cersei.__str__())
+    print(Cersei.__str__)
     print(Cersei.is_alive)
     print("---")
     Jaine = Lannister.create_lannister("Jaine", True)
-    print(f'Name : {Jaine.first_name, type(Jaine).__name__},', end='')
+    print(f'Name : {Jaine.first_name, type(Jaine).__name__}, ', end='')
     print(f'Alive : {Jaine.is_alive}')
 
 

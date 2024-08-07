@@ -21,8 +21,8 @@ class calculator:
         """
         result = []
         for i in V1:  # Assuming V1 and V2 have the same length
-            result.append(i + V2[V1.index(i)])
-        print(f"Add Vector is : {[f'{val:.1f}' for val in result]}")
+            result.append(float(i + V2[V1.index(i)]))
+        print(f"Add Vector is : {result}")
 
     @staticmethod
     def sous_vec(V1: list[float], V2: list[float]) -> None:
@@ -31,5 +31,5 @@ class calculator:
         """
         result = []
         for i in V1:  # Assuming V1 and V2 have the same length
-            result.append(i - V2[V1.index(i)])
-        print(f"Sous Vector is: {[f'{val:.1f}' for val in result]}")
+            result.append(float(i - V2[V1.index(i)]))
+        print(f"Sous Vector is: {result}")

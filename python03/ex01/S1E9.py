@@ -21,7 +21,7 @@ class Character(ABC):
         docstring for die method of abstract class
         This is a die methord of an abstract class Character
         """
-        self.is_alive = False
+        pass
 
 
 class Stark(Character):
@@ -43,3 +43,4 @@ class Stark(Character):
         Docstring for die method of Class Stark:
         the character is die.
         """
+        self.is_alive = False

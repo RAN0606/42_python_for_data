@@ -17,8 +17,11 @@ def main():
     print("---")
     Lyanna = Stark("Lyanna", False)
     print(Lyanna.__dict__)
-    print(Lyanna.die.__doc__)
-    # hodor = Character("hodor")
+    # print(Lyanna.die.__doc__)
+    # try:
+    #     hodor = Character("hodor")
+    # except Exception as e:
+    #     print ("Error: ", e)
 
 
 if __name__ == "__main__":
