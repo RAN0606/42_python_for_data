@@ -1,10 +1,18 @@
 def ft_statistics(*args: any, **kwargs: any) -> None:
+    """
+    function for calculate mean, median, quarts
+    and variance and std variance of the given numbers
+    """
     values = []
     for arg in args:
         values.append(arg)
     values.sort()
 
     def meanfuc(sortelist: tuple) -> float:
+        """
+        inner function for calculating mean
+        """
+
         try:
             mean = sum(args)/len(args)
             print(f"mean: {mean}")
@@ -13,6 +21,9 @@ def ft_statistics(*args: any, **kwargs: any) -> None:
             print("ERROR")
 
     def medianfuc(sortelist: tuple) -> float:
+        """
+        inner function for calculating median
+        """
         try:
             lenth = len(args)
             indexmedian = lenth // 2
@@ -27,6 +38,9 @@ def ft_statistics(*args: any, **kwargs: any) -> None:
             print("ERROR")
 
     def quartfuc(sortelist: tuple) -> list:
+        """
+        inner function for calculating a list of quart
+        """
         try:
             q1_index = len(sortelist) // 4
             q3_index = q1_index * 3
@@ -37,6 +51,9 @@ def ft_statistics(*args: any, **kwargs: any) -> None:
             print("ERROR")
 
     def varfunc(values: any) -> float:
+        """
+        inner function for calculating variance
+        """
         try:
             mean = sum(values)/len(values)
             variance_total = 0
@@ -50,6 +67,10 @@ def ft_statistics(*args: any, **kwargs: any) -> None:
             print("ERROR")
 
     def stdvarfunc(values: any) -> float:
+        """
+        inner function for calculating std variance
+        """
+
         try:
             mean = sum(values)/len(values)
             variance_total = 0
@@ -72,19 +93,3 @@ def ft_statistics(*args: any, **kwargs: any) -> None:
             varfunc(values)
         elif value == "std":
             stdvarfunc(values)
-
-
-def main():
-    ft_statistics(1, 42, 360, 11, 64,
-                  toto="mean", tutu="median", tata="quartile")
-    print("-----")
-    ft_statistics(5, 75, 450, 18, 597, 27474, 48575, hello="std", world="var")
-    print("-----")
-    ft_statistics(5, 75, 450, 18, 597, 27474, 48575,
-                  ejfhhe="heheh", ejdjdejn="kdekem")
-    print("-----")
-    ft_statistics(toto="mean", tutu="median", tata="quartile")
-
-
-if __name__ == "__main__":
-    main()
